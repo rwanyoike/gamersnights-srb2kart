@@ -3,6 +3,7 @@ services:
     # Ref: https://github.com/rwanyoike/srb2kart-server-docker
     image: "docker.io/rwanyoike/srb2kart-server:latest"
     command:
+      - "srb2kart"
       - "-dedicated"
       - "-file"
       - "addons/KL_HOSTMOD_V18.pk3" # https://mb.srb2.org/showthread.php?t=45107

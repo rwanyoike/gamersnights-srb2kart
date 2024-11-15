@@ -4,13 +4,11 @@
 
 > A SRB2Kart experience in East Africa.
 
-<p align="center">
-  <img src="assets/kart0000.png" width="100%" alt="SRB2Kart">
-</p>
+![SRB2Kart](assets/kart0000.png)
 
 ## Usage
 
-To start the SRB2Kart dedicated netgame server on port `5029/udp`:
+To start the SRB2Kart dedicated netgame server on port `5029/udp`, run:
 
 ```shell
 # Clone the repository
@@ -19,11 +17,13 @@ git clone https://github.com/rwanyoike/gamersnights-srb2kart
 cd gamersnights-srb2kart
 # Set the necessary permissions
 chmod -v 0777 ./data
-# Start the SRB2Kart server
+# Start the container
 docker compose up
 ```
 
-## Addons (not included)
+## Addons
+
+This server uses several addons not included in the repository. These addons must be downloaded separately. The expected checksums for these addons are listed in [SHA256SUMS](SHA256SUMS):
 
 - KL_HOSTMOD_V18.pk3 ([discussion](https://mb.srb2.org/showthread.php?t=45107))
 - KL_kartmp-v1.5.pk3 ([discussion](https://mb.srb2.org/showthread.php?t=47203))
